@@ -13,7 +13,7 @@ const Downbar = () => {
   }
 
   return (
-    <div className='h-auto rounded-full text-white bottom-0 transition-all border ease-linear duration-300 bg-blue-400 shadow-lg p-3 m-5'>
+    <div className='h-auto rounded-full text-white bottom-0 transition-all border ease-linear duration-300 bg-blue-400 shadow-lg p-3 m-2'>
       <div className='flex h-full flex-col gap-5 justify-center items-center w-full transition-all ease-linear duration-300'>
         {toggleBar && (
             <div className='flex flex-col space-y-3 transition-all ease-linear duration-300'>

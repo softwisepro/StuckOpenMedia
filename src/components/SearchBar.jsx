@@ -26,7 +26,7 @@ const SearchBar = () => {
           onChange={onChange}
           value={value}
           placeholder='Search...'
-          className='w-full z-10 px-5 pl-10 py-[0.4rem] outline-none text-sm bg-transparent border rounded-full text-gray-400'
+          className='w-full z-[5px] px-5 pl-10 py-[0.4rem] outline-none text-sm bg-transparent border rounded-full text-gray-400'
         />
       </form>
     </>
