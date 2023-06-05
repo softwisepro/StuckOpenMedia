@@ -44,7 +44,7 @@ const RegisterModel = ({ toggleModel, closeModel, closeDropdown }) => {
           <h2 className='text-center text-xl font-semibold'>Stuck</h2>
         </div>
         <form onSubmit={e => onSubmit(e)} className='flex flex-col gap-3'>
-          <div className='w-full px-16 relative flex items-center justify-between'>
+          <div className='w-full px-5 md:px-16 relative flex items-center justify-between'>
             <input
               value={username}
               onChange={e => onChange(e)}
@@ -54,10 +54,10 @@ const RegisterModel = ({ toggleModel, closeModel, closeDropdown }) => {
               required
               className={`border-2 z-10 bg-transparent border-opacity-10 focus:outline-blue-400 h-10 text-sm w-full p-3 rounded-md`}
             />
-            <span className={`absolute left-20 items-center ${username ? 'text-blue-400 rounded-full bg-white transform -translate-x-2 -translate-y-5 text-xs px-1 z-20' : ''} input-text text-sm focused transition-all ease-linear duration-50`}>Username</span>
+            <span className={`absolute left-9 md:left-20 items-center ${username ? 'text-blue-400 rounded-full bg-white transform -translate-x-2 -translate-y-5 text-xs px-1 z-20' : ''} input-text text-sm focused transition-all ease-linear duration-50`}>Username</span>
           </div>
 
-          <div className='w-full px-16 relative flex items-center justify-between'>
+          <div className='w-full px-5 md:px-16 relative flex items-center justify-between'>
             <input
               value={email}
               onChange={e => onChange(e)}
@@ -67,10 +67,10 @@ const RegisterModel = ({ toggleModel, closeModel, closeDropdown }) => {
               required
               className={`border-2 z-10 bg-transparent border-opacity-10 focus:outline-blue-400 h-10 text-sm w-full p-3 rounded-md`}
             />
-            <span className={`absolute left-20 items-center ${email ? 'text-blue-400 rounded-full bg-white transform -translate-x-2 -translate-y-5 text-xs px-1 z-20' : ''} input-text text-sm focused transition-all ease-linear duration-50`}>Email</span>
+            <span className={`absolute left-9 md:left-20 items-center ${email ? 'text-blue-400 rounded-full bg-white transform -translate-x-2 -translate-y-5 text-xs px-1 z-20' : ''} input-text text-sm focused transition-all ease-linear duration-50`}>Email</span>
           </div>
 
-          <div className='w-full px-16 relative flex items-center justify-between'>
+          <div className='w-full px-5 md:px-16 relative flex items-center justify-between'>
             <input
               value={password}
               onChange={e => onChange(e)}
@@ -80,10 +80,10 @@ const RegisterModel = ({ toggleModel, closeModel, closeDropdown }) => {
               required
               className='border-2 z-10 bg-transparent border-opacity-10 focus:outline-blue-400 h-10 text-sm w-full p-3 rounded-md'
             />
-            <span className={`absolute left-20 items-center input-text text-sm focused transition-all ease-linear duration-50 ${password ? 'text-blue-400 rounded-full bg-white transform -translate-x-2 -translate-y-5 text-xs px-1 z-20' : ''}`}>Password</span>
+            <span className={`absolute left-9 md:left-20 items-center input-text text-sm focused transition-all ease-linear duration-50 ${password ? 'text-blue-400 rounded-full bg-white transform -translate-x-2 -translate-y-5 text-xs px-1 z-20' : ''}`}>Password</span>
           </div>
 
-          <div className='w-full px-16 relative flex items-center justify-between'>
+          <div className='w-full px-5 md:px-16 relative flex items-center justify-between'>
             <input
               value={v_password}
               onChange={e => onChange(e)}
@@ -93,22 +93,22 @@ const RegisterModel = ({ toggleModel, closeModel, closeDropdown }) => {
               required
               className='border-2 z-10 bg-transparent border-opacity-10 focus:outline-blue-400 h-10 text-sm w-full p-3 rounded-md'
             />
-            <span className={`absolute left-20 items-center input-text text-sm focused transition-all ease-linear duration-50 ${v_password ? 'text-blue-400 bg-white rounded-full transform -translate-x-2 -translate-y-5 text-xs px-1 z-20' : ''}`}>Verify Password</span>
+            <span className={`absolute left-9 md:left-20 items-center input-text text-sm focused transition-all ease-linear duration-50 ${v_password ? 'text-blue-400 bg-white rounded-full transform -translate-x-2 -translate-y-5 text-xs px-1 z-20' : ''}`}>Verify Password</span>
           </div>
 
-          <div className='w-full flex justify-center items-center text-sm px-16 space-x-2'>
+          <div className='w-full flex justify-center items-center text-sm px-5 md:px-16 space-x-2'>
             <input type="checkbox" name="agree" id="agree" onClick={() => setChecked(true)} required />
             <p className='text-xs'>By pressing <code className='not-italic text-blue-400'>Register</code> you have agreed to our terms and services</p>
           </div>
 
-          <div className='w-full px-16 relative flex items-center justify-center'>
+          <div className='w-full px-5 md:px-16 relative flex items-center justify-center'>
             <button
               className=' flex space-x-2 justify-center w-10/13 md:w-1/2 font-bold items-center px-5 py-2 bg-blue-400 rounded-sm text-white hover:bg-blue-300 border-e-2 border-e-amber-400 border'
             ><span>Register</span><span><MdOutlineAddToQueue fontSize={20} /></span></button>
           </div>
         </form>
         <div className='w-fulll flex justify-center items-center text-sm mt-5'>
-          <p>Already have an account go to LogIn</p>
+          <p className='text-center'>Already have an account go to LogIn</p>
         </div>
       </div>
     </div>

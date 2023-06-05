@@ -1,7 +1,8 @@
-import React, { Fragment, useEffect, useState } from 'react';
-import Navbar from '../components/Navbar';
-import Sidebar from '../components/Sidebar';
-import Downbar from '../components/Downbar';
+import React, { Fragment, useEffect, useState } from 'react'
+import Navbar from '../components/Navbar'
+import Sidebar from '../components/Sidebar'
+import Downbar from '../components/Downbar'
+import { MdMenu } from 'react-icons/md'
 
 
 const Layout = ({ children }) => {
@@ -35,7 +36,7 @@ const Layout = ({ children }) => {
             { children }
           </div>
         </div>
-        <div className='md:hidden absolute right-2 flex z-10 bottom-0'>
+        <div className='md:hidden absolute left-0 flex z-10 bottom-0'>
           <Downbar />
         </div>
       </div>
